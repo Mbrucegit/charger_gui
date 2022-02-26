@@ -11,11 +11,11 @@ class ProgressBarDemo(QWidget):
 
         self.btnStart = QPushButton('start', self)
         self.btnStart.move(30, 80)
-        self.btnStart.clicked.connect(self.startProgress) # function
+        self.btnStart.clicked.connect(self.startProgress)  # function
 
         self.btnReset = QPushButton('Reset', self)
         self.btnReset.move(120, 80)
-        self.btnReset.clicked.connect(self.resetBar) # function
+        self.btnReset.clicked.connect(self.resetBar)  # function
 
         self.timer = QBasicTimer()
         self.step = 0
