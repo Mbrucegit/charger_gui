@@ -1,3 +1,6 @@
+# Code is adapted from Codemy.com youtube PyQt5 channel
+
+
 import sys
 from PyQt5.uic import loadUi
 from PyQt5.QtWidgets import QMainWindow, QApplication
@@ -9,10 +12,9 @@ class MainWindow(QMainWindow):
         self.show()
 
 #main
-app = QApplication(sys.argv)
-mainwindow = MainWindow()
 
-try:
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    mainwindow = MainWindow()
     sys.exit(app.exec_())
-except:
-    print("Exiting")
+
